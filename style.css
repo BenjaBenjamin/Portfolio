@@ -27,51 +27,64 @@ header {
     border-bottom: solid thick;
     border-width: 2vw;
 }
+
+.temabeskrivelse {
+    margin: 2vw;
+    padding: 1vw;
+    border: solid;
+}
+
+.temabeskrivelse p {
+    font-size: 1.3rem;
+}
+
 /*----------Off-canvas navigation----------*/
 
 
-.hide{
+.hide {
     display: none;
 }
- .sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px;
-  transition: 0.5s;
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: white;
-  display: block;
-  transition: 0.3s;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: darkred;
+    color: darkred;
 }
 
 .sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
     color: darkred;
 }
 
 .openbtn {
-  position: fixed;
-  top: 0;
-  font-size: 40px;
+    position: fixed;
+    top: 0;
+    font-size: 40px;
     cursor: pointer;
     color: black;
     background-color: darkred;
@@ -82,14 +95,19 @@ header {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 
@@ -209,7 +227,7 @@ h1 {
     position: absolute;
 }
 
-.fiskebillede_mobil{
+.fiskebillede_mobil {
     height: 0;
     width: 0;
 }
@@ -224,8 +242,8 @@ h1 {
     margin-top: 12vw;
 }
 
-.infobox p{
-    font-size: 1.9rem;
+.infobox p {
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -235,6 +253,8 @@ h2 {
     margin-bottom: 2vw;
     font-size: 2rem;
 }
+
+
 
 .billedebox1 {
     margin: auto;
@@ -257,7 +277,7 @@ h2 {
 }
 
 .textbox1 p {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -280,7 +300,7 @@ video {
 }
 
 .textbox2 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -313,7 +333,7 @@ video {
 }
 
 .textbox3 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -330,7 +350,7 @@ video {
 }
 
 .textbox4 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -356,7 +376,7 @@ video {
 }
 
 .textbox5 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -382,7 +402,7 @@ video {
 }
 
 .textbox6 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -397,6 +417,7 @@ video {
 .billedebox6:hover {
     opacity: 0.8;
 }
+
 /*----------Tema 4 siden----------*/
 .textbox7 {
     margin: auto;
@@ -408,7 +429,7 @@ video {
 }
 
 .textbox7 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -434,7 +455,7 @@ video {
 }
 
 .textbox8 {
-    font-size: 2rem;
+    font-size: 1.45rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -449,6 +470,7 @@ video {
 .billedebox8:hover {
     opacity: 0.8;
 }
+
 .textbox9 {
     margin: auto;
     background-color: white;
@@ -459,7 +481,7 @@ video {
 }
 
 .textbox9 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -485,7 +507,7 @@ video {
 }
 
 .textbox10 {
-    font-size: 2rem;
+    font-size: 1.46rem;
     padding: 1vw;
     letter-spacing: 2px;
 }
@@ -503,88 +525,103 @@ video {
 
 /*----------Media Queries: Mobile ----------*/
 @media only screen and (max-width: 450px) {
-    nav{
+    nav {
         display: none;
     }
-    body{
 
-    }
-    .sectionwrapper{
+    body {}
+
+    .sectionwrapper {
         flex-wrap: wrap;
 
     }
-    .infobox{
+
+    .infobox {
         height: 55vw;
         width: 55vw;
-        position:inherit;
+        position: inherit;
         margin-top: 30vw;
         margin-left: 5vw;
     }
-     .fiskebillede{
+
+    .fiskebillede {
         display: none;
     }
-    .fiskebillede_mobil{
+
+    .fiskebillede_mobil {
         position: relative;
         height: 50vw;
         width: 60vw;
         margin-left: 30vw;
 
     }
-    h1{
-        font-size:  2rem;
+
+    h1 {
+        font-size: 2rem;
     }
-    h2{
+
+    h2 {
         font-size: 1rem;
         text-align: center;
     }
-    .infobox p{
-    font-size: 0.51rem;
-    text-align: center;
-}
-    .textbox1{
+
+    .infobox p {
+        font-size: 0.51rem;
+        text-align: center;
+    }
+
+    .temabeskrivelse p {
+        font-size: 0.9rem;
+    }
+
+    .temabeskrivelse {
+        margin: 11vw;
+    }
+
+    .textbox1 {
         flex-basis: 300px;
         margin-top: 8vw;
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox1 p{
-        font-size: 0.6rem;
+    .textbox1 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox1{
+    .billedebox1 {
         margin: auto;
         height: 60vw;
         width: 60vw;
     }
 
-    .textbox2{
+    .textbox2 {
         flex-basis: 300px;
         margin-top: 8vw;
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox2 p{
-        font-size: 0.6rem;
+    .textbox2 p {
+        font-size: 0.68rem;
     }
 
-    .video{
+    .video {
         margin: auto;
     }
 
-    .textbox3{
+    .textbox3 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox3 p{
-        font-size: 0.6rem;
+    .textbox3 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox3{
+    .billedebox3 {
         margin: auto;
         margin-top: 8vw;
         margin-bottom: 2vw;
@@ -592,90 +629,90 @@ video {
         width: 60vw;
     }
 
-    .textbox4{
+    .textbox4 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox4 p{
-        font-size: 0.6rem;
+    .textbox4 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox4{
+    .billedebox4 {
         margin: auto;
         margin-bottom: 7vw;
         height: 40vw;
         width: 70vw;
     }
 
-    .textbox5{
+    .textbox5 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox5 p{
-        font-size: 0.6rem;
+    .textbox5 p {
+        font-size: 0.67rem;
     }
 
-    .billedebox5{
+    .billedebox5 {
         margin: auto;
         margin-top: 7vw;
         height: 50vw;
         width: 70vw;
     }
 
-    .textbox6{
+    .textbox6 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox6 p{
-        font-size: 0.6rem;
+    .textbox6 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox6{
+    .billedebox6 {
         margin: auto;
         margin-bottom: 7vw;
         height: 40vw;
         width: 70vw;
     }
 
-     .textbox7{
+    .textbox7 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox7 p{
-        font-size: 0.6rem;
+    .textbox7 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox7{
+    .billedebox7 {
         margin: auto;
         margin-bottom: 7vw;
         height: 70vw;
         width: 40vw;
     }
 
-    .textbox8{
+    .textbox8 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox8 p{
-        font-size: 0.6rem;
+    .textbox8 p {
+        font-size: 0.54rem;
     }
 
-    .billedebox8{
+    .billedebox8 {
         margin: auto;
         margin-top: 7vw;
         margin-bottom: 4vw;
@@ -683,36 +720,36 @@ video {
         width: 40vw;
     }
 
-    .textbox9{
+    .textbox9 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox9 p{
-        font-size: 0.6rem;
+    .textbox9 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox9{
+    .billedebox9 {
         margin: auto;
         margin-bottom: 7vw;
         height: 70vw;
         width: 40vw;
     }
 
-    .textbox10{
+    .textbox10 {
         flex-basis: 300px;
 
         height: 55vw;
         width: 20vw;
     }
 
-    .textbox10 p{
-        font-size: 0.6rem;
+    .textbox10 p {
+        font-size: 0.68rem;
     }
 
-    .billedebox10{
+    .billedebox10 {
         margin: auto;
         margin-top: 7vw;
         margin-bottom: 4vw;
