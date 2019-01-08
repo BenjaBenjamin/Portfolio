@@ -1,0 +1,722 @@
+/*----------Generelle indstillinger----------*/
+
+img {
+    width: 100%;
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+
+}
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header {
+    margin-bottom: 2vw;
+    border-bottom: solid thick;
+    border-width: 2vw;
+}
+/*----------Off-canvas navigation----------*/
+
+
+.hide{
+    display: none;
+}
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: darkred;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+    color: darkred;
+}
+
+.openbtn {
+  position: fixed;
+  top: 0;
+  font-size: 40px;
+    cursor: pointer;
+    color: black;
+    background-color: darkred;
+    margin-left: 2vw;
+    margin-top: 13vw;
+    border-radius: 2vw;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+/*----------Navigation----------*/
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1vw;
+    position: relative;
+}
+
+nav p {
+    font-size: 1.1rem;
+    color: white;
+    padding: 5px;
+    font-weight: 100;
+    width: 15vw;
+}
+
+.active {
+    background-color: darkred;
+}
+
+nav li a:hover:not(.active) {
+    background-color: darkred;
+    transition: all 0.5s ease 0s;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+    width: 98vw;
+
+}
+
+nav ul li {
+    width: 17vw;
+    border-right: 1px solid #bbb;
+}
+
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+
+li a,
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #8a0000;
+    transition: all 0.5s ease 0s;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 17vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*----------Om mig siden----------*/
+h1 {
+    font-family: "copperplate Gothic";
+    font-size: 5rem;
+    padding-left: 3vw;
+
+}
+
+.sectionwrapper {
+    display: flex;
+
+}
+
+.fiskebillede {
+    padding-left: 20vw;
+    padding-right: 2vw;
+    position: absolute;
+}
+
+.fiskebillede_mobil{
+    height: 0;
+    width: 0;
+}
+
+.infobox {
+    position: absolute;
+    background-color: darkred;
+    height: 40vw;
+    width: 40vw;
+    border-radius: 27vw;
+    margin-left: 1vw;
+    margin-top: 12vw;
+}
+
+.infobox p{
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+/*----------Tema 1 siden----------*/
+h2 {
+    margin-left: 5vw;
+    margin-bottom: 2vw;
+    font-size: 2rem;
+}
+
+.billedebox1 {
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox1:hover {
+    opacity: 0.8;
+}
+
+.textbox1 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox1 p {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+/*----------Tema 2 siden----------*/
+video {
+    height: 35vw;
+    width: 50vw;
+    margin-left: 5vw;
+}
+
+
+.textbox2 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox2 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.border {
+    border-bottom: solid black;
+    border-width: 25px;
+    padding-bottom: 5vw;
+    margin-bottom: 1vw;
+}
+
+.billedebox3 {
+    margin: auto;
+    height: 40vw;
+    width: 40vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox3:hover {
+    opacity: 0.8;
+}
+
+.textbox3 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox3 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+/*----------Tema 3 siden----------*/
+
+.textbox4 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox4 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox4 {
+    margin: auto;
+    height: 23vw;
+    width: 40vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox4:hover {
+    opacity: 0.8;
+}
+
+.textbox5 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox5 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox5 {
+    margin: auto;
+    height: 23vw;
+    width: 40vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox5:hover {
+    opacity: 0.8;
+}
+
+.textbox6 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox6 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox6 {
+    margin: auto;
+    height: 22.5vw;
+    width: 40vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox6:hover {
+    opacity: 0.8;
+}
+/*----------Tema 4 siden----------*/
+.textbox7 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox7 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox7 {
+    margin: auto;
+    height: 44vw;
+    width: 25vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox7:hover {
+    opacity: 0.8;
+}
+
+.textbox8 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox8 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox8 {
+    margin: auto;
+    height: 44vw;
+    width: 24.8vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox8:hover {
+    opacity: 0.8;
+}
+.textbox9 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox9 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox9 {
+    margin: auto;
+    height: 44vw;
+    width: 24.8vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox9:hover {
+    opacity: 0.8;
+}
+
+.textbox10 {
+    margin: auto;
+    background-color: white;
+    height: 40vw;
+    width: 40vw;
+    border: solid darkred;
+    border-width: 5px;
+}
+
+.textbox10 {
+    font-size: 2rem;
+    padding: 1vw;
+    letter-spacing: 2px;
+}
+
+.billedebox10 {
+    margin: auto;
+    height: 35vw;
+    width: 35vw;
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.38);
+}
+
+.billedebox10:hover {
+    opacity: 0.8;
+}
+
+/*----------Media Queries: Mobile ----------*/
+@media only screen and (max-width: 450px) {
+    nav{
+        display: none;
+    }
+    body{
+
+    }
+    .sectionwrapper{
+        flex-wrap: wrap;
+
+    }
+    .infobox{
+        height: 55vw;
+        width: 55vw;
+        position:inherit;
+        margin-top: 30vw;
+        margin-left: 5vw;
+    }
+     .fiskebillede{
+        display: none;
+    }
+    .fiskebillede_mobil{
+        position: relative;
+        height: 50vw;
+        width: 60vw;
+        margin-left: 30vw;
+
+    }
+    h1{
+        font-size:  2rem;
+    }
+    h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .infobox p{
+    font-size: 0.51rem;
+    text-align: center;
+}
+    .textbox1{
+        flex-basis: 300px;
+        margin-top: 8vw;
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox1 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox1{
+        margin: auto;
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .textbox2{
+        flex-basis: 300px;
+        margin-top: 8vw;
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox2 p{
+        font-size: 0.6rem;
+    }
+
+    .video{
+        margin: auto;
+    }
+
+    .textbox3{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox3 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox3{
+        margin: auto;
+        margin-top: 8vw;
+        margin-bottom: 2vw;
+        height: 60vw;
+        width: 60vw;
+    }
+
+    .textbox4{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox4 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox4{
+        margin: auto;
+        margin-bottom: 7vw;
+        height: 40vw;
+        width: 70vw;
+    }
+
+    .textbox5{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox5 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox5{
+        margin: auto;
+        margin-top: 7vw;
+        height: 50vw;
+        width: 70vw;
+    }
+
+    .textbox6{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox6 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox6{
+        margin: auto;
+        margin-bottom: 7vw;
+        height: 40vw;
+        width: 70vw;
+    }
+
+     .textbox7{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox7 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox7{
+        margin: auto;
+        margin-bottom: 7vw;
+        height: 70vw;
+        width: 40vw;
+    }
+
+    .textbox8{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox8 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox8{
+        margin: auto;
+        margin-top: 7vw;
+        margin-bottom: 4vw;
+        height: 70vw;
+        width: 40vw;
+    }
+
+    .textbox9{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox9 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox9{
+        margin: auto;
+        margin-bottom: 7vw;
+        height: 70vw;
+        width: 40vw;
+    }
+
+    .textbox10{
+        flex-basis: 300px;
+
+        height: 55vw;
+        width: 20vw;
+    }
+
+    .textbox10 p{
+        font-size: 0.6rem;
+    }
+
+    .billedebox10{
+        margin: auto;
+        margin-top: 7vw;
+        margin-bottom: 4vw;
+        height: 50vw;
+        width: 50vw;
+    }
+}
